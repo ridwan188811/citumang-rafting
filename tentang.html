@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang - Citumang Rafting</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .page-header {
+        position: relative;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 80px;
+        overflow: hidden;
+        background: #000;
+      }
+      .page-title {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        font-size: 3rem;
+        animation: fadeInUp 0.8s ease forwards;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      }
+
+      .about-content {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+      }
+      .about-text {
+        flex: 1;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--text-main);
+      }
+      .about-image {
+        flex: 1;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        aspect-ratio: 4/3;
+      }
+      .aboutSwiper {
+        width: 100%;
+        height: 100%;
+      }
+      .aboutSwiper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+        }
+        .about-image {
+          flex: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="top-navbar scrolled">
+      <a href="index.html" class="logo"
+        ><i class="fa-solid fa-water"></i> Citumang Rafting</a
+      >
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="paket.html">Paket Wisata</a></li>
+        <li><a href="tentang.html" class="active">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <button class="lang-toggle">
+          ID <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <video class="hero-video-bg-cover" autoplay loop muted playsinline>
+        <source src="images/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <h1 class="page-title">Tentang Citumang</h1>
+    </header>
+
+    <section class="section" style="padding-top: 80px">
+      <div class="about-content reveal-elem">
+        <div class="about-text">
+          <h2
+            style="
+              color: var(--primary-color);
+              font-size: 2.2rem;
+              margin-bottom: 20px;
+            "
+          >
+            Surga Tersembunyi di Pangandaran
+          </h2>
+          <p style="margin-bottom: 20px">
+            Citumang adalah objek wisata alam yang terletak di Kabupaten
+            Pangandaran, Jawa Barat. Nama Citumang diambil dari aliran sungai
+            yang membelah hutan jati dengan air yang berwarna kebiruan dan
+            sangat jernih.
+          </p>
+          <p>
+            Aktivitas favorit di sini adalah Body Rafting, di mana pengunjung
+            akan diajak menyusuri sungai menggunakan pelampung, melewati gua-gua
+            alami, akar pohon eksotis, dan tebing-tebing indah. Kami berkomitmen
+            memberikan pengalaman liburan yang tak hanya seru, tapi juga 100%
+            aman dengan didampingi pemandu profesional lokal.
+          </p>
+        </div>
+        <div class="about-image">
+          <div class="swiper aboutSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/unnamed (1).jpg" alt="Keindahan Citumang 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/unnamed (2).jpg" alt="Keindahan Citumang 2" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/15-jernih-Hendro-1536x1152.jpg"
+                  alt="Keindahan Citumang 3"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <i class="fa-solid fa-water"></i> Citumang Rafting
+          </div>
+          <p style="color: #ccc; font-size: 0.95rem">
+            Jadikan liburan Anda di Pangandaran tak terlupakan.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="paket.html">Paket Wisata</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <ul class="footer-links">
+            <li><i class="fa-brands fa-whatsapp"></i> 0812-2219-3761</li>
+            <li><i class="fa-brands fa-instagram"></i> @citumang.rafting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Citumang Rafting.</div>
+    </footer>
+    <nav class="mobile-bottom-nav">
+      <a href="index.html" class="mobile-nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Beranda</span>
+      </a>
+      <a href="paket.html" class="mobile-nav-item">
+        <i class="fa-solid fa-ticket"></i>
+        <span>Paket</span>
+      </a>
+      <a href="tentang.html" class="mobile-nav-item active">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Tentang</span>
+      </a>
+      <a href="kontak.html" class="mobile-nav-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Kontak</span>
+      </a>
+    </nav>
+
+    <a
+      href="https://wa.me/6281222193761?text=Halo%20saya%20tertarik%20booking%20Paket%20Body%20Rafting"
+      class="floating-wa"
+      target="_blank"
+      aria-label="Hubungi via WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".aboutSwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          effect: "fade",
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
